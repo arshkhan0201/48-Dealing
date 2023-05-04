@@ -20,14 +20,20 @@ span ul li {
     font-size: 20px;
 }
 
+.navbar-toggler {
+    background: rgb(214, 156, 182);
+    background: radial-gradient(circle, rgba(214, 156, 182, 1) 0%, #292cc4 100%);
+}
+
 .btn {
+    z-index: 1;
     margin-bottom: -43px !important;
     margin-top: -26px !important;
     padding: 50px 35px !important;
     font-size: 36px;
     min-width: 94px;
     background: rgb(214, 156, 182);
-    background: radial-gradient(circle, rgba(214, 156, 182, 1) 0%, rgba(112, 99, 226, 1) 100%);
+    background: radial-gradient(circle, rgba(214, 156, 182, 1) 0%, #292cc4 100%);
 }
 
 .banner {
@@ -36,18 +42,24 @@ span ul li {
     height: 600px;
     background-attachment: fixed;
     background-blend-mode: saturation;
+    position: relative;
 }
 
 .banner-content {
-    position: relative;
-    top: 150px;
     padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-30%, -50%);
 }
 
 .banner-h1 {
     font-size: 55px;
     font-style: italic;
     font-weight: 600;
+    background: -webkit-linear-gradient(rgba(214, 156, 182, 1), #292cc4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .banner-p {
@@ -56,8 +68,8 @@ span ul li {
 }
 
 .hover-btn {
-    background: rgb(214, 156, 182);
-    background: radial-gradient(circle, rgba(214, 156, 182, 1) 0%, rgba(112, 99, 226, 1) 100%);
+    background: rgb(214, 156, 182 0.5);
+    background: radial-gradient(circle, rgba(214, 156, 182, 0.5) 0%, #292cc4 100%);
     color: #fff;
     padding: 15px 50px;
     font-weight: 700;
@@ -69,7 +81,8 @@ span ul li {
 }
 
 .hover-btn:hover {
-    box-shadow: inset 400px 0 0 0 rgba(0, 0, 0, 0.3);
+    background: rgb(214, 156, 182);
+    background: radial-gradient(circle, rgba(214, 156, 182, 1) 0%, #292cc4 100%);
 }
 
 .onestop-section {
@@ -78,7 +91,7 @@ span ul li {
 
 .onestop {
     width: 100%;
-    height: 500px;
+    height: 600px;
     background-image: url(../images/bg-48.png);
     background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.78);
@@ -87,13 +100,13 @@ span ul li {
 
 .onestop-content {
     text-align: center;
-    position: relative;
-    top: 50%;
     box-shadow: rgba(0, 0, 0, 1) 0px 200px 250px 4px;
 }
 
 .onestop-p {
-    color: rgba(112, 99, 226, 1);
+    background: -webkit-linear-gradient(rgba(214, 156, 182, 1), #292cc4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .onestop-h4 {
@@ -105,7 +118,9 @@ span ul li {
 }
 
 .service h2 {
-    color: rgba(112, 99, 226, 1);
+    background: -webkit-linear-gradient(rgba(214, 156, 182, 1), #292cc4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 50px;
 }
 
@@ -142,22 +157,30 @@ span ul li {
     margin-top: 20px;
 }
 
-.about {
-    padding: 30px;
+.work-content-img img:hover {
+    transition: all 1s 0s;
+    transform: scale(0.9);
 }
 
-.about-inner-content {
-    margin-top: 50px;
+.work-content-img2 img:hover {
+    transition: all 1s 0s;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+}
+
+.about {
+    padding: 30px;
 }
 
 .about-h1 {
     font-style: italic;
     font-size: 50px;
-}
-
-.about p {
-    line-height: 30px;
-    padding-top: 20px;
+    background: -webkit-linear-gradient(rgba(214, 156, 182, 1), #292cc4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 }
 
@@ -167,16 +190,18 @@ span ul li {
 }
 
 .about-us-content {
-    margin-top: 20px;
+    padding: 20px;
 }
 
 .about-us-h1 {
     font-size: 50px;
     font-style: italic;
+    background: -webkit-linear-gradient(rgba(214, 156, 182, 1), #292cc4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.about-us-img
-{
+.about-us-img {
     border: 2px solid rgba(112, 99, 226, 1);
     box-shadow: 0px 0px 8px rgba(112, 99, 226, 1);
 }
@@ -193,11 +218,30 @@ span ul li {
 .customer-h1 {
     font-weight: 700;
     font-style: italic;
+    background: -webkit-linear-gradient(rgba(214, 156, 182, 1), #292cc4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.our-customer-slider
-{
+.our-customer-slider {
     padding: 50px;
     background: rgb(214, 156, 182);
-    background: radial-gradient(circle, rgba(214, 156, 182, 1) 0%, rgba(112, 99, 226, 1) 100%);
+    background: radial-gradient(circle, rgba(214, 156, 182, 1) 0%, #292cc4 100%);
+}
+
+footer {
+    background-color: #000;
+    padding: 30px;
+}
+
+.footer-services h3 {
+    background: -webkit-linear-gradient(rgba(214, 156, 182, 1), #292cc4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width:992px) {
+    .about-us {
+        width: 100%;
+    }
 }
